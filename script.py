@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+import os
 import subprocess
 
 # Install necessary packages
@@ -16,7 +16,7 @@ display_value = subprocess.run(['echo', '$DISPLAY'], capture_output=True, text=T
 print(f"DISPLAY value: {display_value}")
 
 
-
+os.environ['DISPLAY'] = display_value
 
 # Create and set permissions for .Xauthority file
 subprocess.run(['touch', '~/.Xauthority'])
