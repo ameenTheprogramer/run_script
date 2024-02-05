@@ -12,9 +12,9 @@ subprocess.run(['pip', 'install', 'pyautogui'])
 subprocess.run(['wget', 'https://raw.githubusercontent.com/ameenTheprogramer/right_arrow/main/arrow_key_press.py'])
 
 # Print the value of DISPLAY
-# display_value = subprocess.run(['echo', '$DISPLAY'], capture_output=True, text=True).stdout.strip()
-# print(f"DISPLAY value: {display_value}")
-subprocess.run(['echo','$DISPLAY'])
+display_value = subprocess.run(['echo', '$DISPLAY'], capture_output=True, text=True).stdout.strip()
+print(f"DISPLAY value: {display_value}")
+
 
 
 
