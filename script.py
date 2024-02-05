@@ -12,15 +12,18 @@ subprocess.run(['pip', 'install', 'pyautogui'])
 subprocess.run(['wget', 'https://raw.githubusercontent.com/ameenTheprogramer/right_arrow/main/arrow_key_press.py'])
 
 # Print the value of DISPLAY
-display_value = subprocess.run(['echo', '$DISPLAY'], capture_output=True, text=True).stdout.strip()
-print(f"DISPLAY value: {display_value}")
+# display_value = subprocess.run(['echo', '$DISPLAY'], capture_output=True, text=True).stdout.strip()
+# print(f"DISPLAY value: {display_value}")
+subprocess.run(['echo','$DISPLAY'])
+
+
 
 # Create and set permissions for .Xauthority file
 subprocess.run(['touch', '~/.Xauthority'])
 subprocess.run(['chmod', '600', '~/.Xauthority'])
 
 # Export DISPLAY=:0
-subprocess.run(['export', f'DISPLAY={display_value}'])
+subprocess.run(['export', 'DISPLAY=:0'])
 
 # Exit the current terminal session
 subprocess.run(['exit'])
