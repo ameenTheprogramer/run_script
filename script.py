@@ -11,5 +11,6 @@ subprocess.run(['pip3', 'install', 'pyautogui'])
 
 # Download the arrow_key_press.py script
 subprocess.run(['wget', 'https://raw.githubusercontent.com/ameenTheprogramer/right_arrow/main/arrow_key_press.py'])
+subprocess.run(['wget', 'https://raw.githubusercontent.com/ameenTheprogramer/run_script/main/script2.py'])
 
 
