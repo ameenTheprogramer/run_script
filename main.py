@@ -57,6 +57,7 @@ def download_scripts():
     subprocess.run(['wget', 'https://raw.githubusercontent.com/ameenTheprogramer/right_arrow/main/arrow_key_press.py'])
     subprocess.run(['wget', 'https://raw.githubusercontent.com/ameenTheprogramer/run_script/main/script2.py'])
     subprocess.run(['wget', 'https://raw.githubusercontent.com/ameenTheprogramer/run_script/main/shortcut2.py'])
+    subprocess.run(['wget', 'https://raw.githubusercontent.com/ameenTheprogramer/click/main/click.py'])
 
 def main():
     color = 'echo -e "\033]10;#00FF00\007"'
