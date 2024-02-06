@@ -3,7 +3,6 @@ import subprocess
 
 def install_dependencies():
     # Install necessary packages
-    subprocess.run(['sudo', 'apt', 'update'])
     subprocess.run(['sudo', 'apt', 'install', '-y', 'python3-pip'])
     subprocess.run(['pip3', 'install', '--upgrade', 'pip'])
     subprocess.run(['pip3', 'install', 'pynput'])
@@ -20,6 +19,7 @@ def download_scripts():
 
 def main():
   
+    subprocess.run(['sudo', 'apt', 'update'])
     install_dependencies()
     subprocess.run(['xterm', '-fg', '#00FF00'])
     download_scripts()
