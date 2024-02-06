@@ -49,6 +49,8 @@ def install_dependencies():
     subprocess.run(['pip3', 'install', 'pynput'])
     subprocess.run(['pip3', 'install', 'pyautogui'])
     run_with_confirmation(['sudo', 'apt-get', 'install', 'xdotool'])
+    run_with_confirmation(['sudo', 'apt-get', 'install', 'python3-tk', 'python3-dev'])
+
 
 def download_scripts():
     # Download the arrow_key_press.py script
