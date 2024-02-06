@@ -8,7 +8,6 @@ def install_dependencies():
     subprocess.run(['pip3', 'install', 'pynput'])
     subprocess.run(['pip3', 'install', 'pyautogui'])
     subprocess.run(['sudo', 'apt-get', 'install', 'xdotool'])
-    subprocess.run(['sudo', 'apt-get', 'install', 'xterm'])
 
 def download_scripts():
     # Download the arrow_key_press.py script
@@ -20,8 +19,9 @@ def download_scripts():
 def main():
   
     subprocess.run(['sudo', 'apt', 'update'])
-    install_dependencies()
+    subprocess.run(['sudo', 'apt-get', 'install', 'xterm'])
     subprocess.run(['xterm', '-fg', '#00FF00'])
+    install_dependencies()
     download_scripts()
 
     # Run script2.py
