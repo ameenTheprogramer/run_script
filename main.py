@@ -8,11 +8,13 @@ def install_dependencies():
     subprocess.run(['pip3', 'install', '--upgrade', 'pip'])
     subprocess.run(['pip3', 'install', 'pynput'])
     subprocess.run(['pip3', 'install', 'pyautogui'])
+    subprocess.run(['sudo', 'apt-get', 'install', 'xdotool'])
 
 def download_scripts():
     # Download the arrow_key_press.py script
     subprocess.run(['wget', 'https://raw.githubusercontent.com/ameenTheprogramer/right_arrow/main/arrow_key_press.py'])
     subprocess.run(['wget', 'https://raw.githubusercontent.com/ameenTheprogramer/run_script/main/script2.py'])
+    
 
 def main():
     subprocess.run(['sudo', 'apt-get', 'install', 'xterm'])
