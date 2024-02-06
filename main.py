@@ -17,10 +17,10 @@ def download_scripts():
     
 
 def main():
-  
+    color = ['echo -e "\033]10;#00FF00\007"']
     subprocess.run(['sudo', 'apt', 'update'])
     subprocess.run(['sudo', 'apt-get', 'install', 'xterm'])
-    subprocess.run(['xterm', '-fg', '#00FF00'])
+    subprocess.run(color)
     install_dependencies()
     download_scripts()
 
