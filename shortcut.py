@@ -10,4 +10,6 @@ def open_new_terminal():
 if __name__ == "__main__":
     open_new_terminal()
     subprocess.run(['python3', 'arrow_key_press.py'])
+    open_new_terminal()
+    subprocess.run(['python3', 'arrow_key_press.py'])
     
