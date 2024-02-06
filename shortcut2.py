@@ -1,3 +1,4 @@
+import time
 import subprocess
 
 def open_new_terminal(command):
@@ -11,5 +12,11 @@ if __name__ == "__main__":
     # Open another new terminal and run 'firefox clickasnap.com/iamthecoolguy'
     open_new_terminal('firefox clickasnap.com/iamthecoolguy')
 
-    
+    time.sleep(10)
     open_new_terminal('python click.py')
+    time.sleep(10)
+    open_new_terminal('python scroll.py')
+    time.sleep(10)
+    open_new_terminal('python click2.py')
+    time.sleep(10)
+    open_new_terminal('python scroll2.py')
