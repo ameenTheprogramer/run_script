@@ -17,5 +17,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-    subprocess.run(['python3', 'shortcut.py'])
+    subprocess.run(['python3', 'shortcut2.py'])
     subprocess.run(['exit'])
