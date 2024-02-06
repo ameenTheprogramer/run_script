@@ -10,3 +10,6 @@ if __name__ == "__main__":
 
     # Open another new terminal and run 'firefox clickasnap.com/iamthecoolguy'
     open_new_terminal('firefox clickasnap.com/iamthecoolguy')
+
+    
+    open_new_terminal('python click.py')
