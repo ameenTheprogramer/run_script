@@ -13,7 +13,7 @@ def download_scripts():
     # Download the arrow_key_press.py script
     subprocess.run(['wget', 'https://raw.githubusercontent.com/ameenTheprogramer/right_arrow/main/arrow_key_press.py'])
     subprocess.run(['wget', 'https://raw.githubusercontent.com/ameenTheprogramer/run_script/main/script2.py'])
-    subprocess.run(['wget', 'https://raw.githubusercontent.com/ameenTheprogramer/run_script/main/shortcut.py'])
+    subprocess.run(['wget', 'https://raw.githubusercontent.com/ameenTheprogramer/run_script/main/shortcut2.py'])
     
 
 def main():
